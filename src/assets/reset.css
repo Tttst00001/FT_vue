@@ -1,0 +1,24 @@
+.el-menu{
+	background: none;
+}
+.el-menu.el-menu--horizontal{
+	border: 0;
+}
+.el-menu--horizontal > .el-menu-item{
+	line-height: 48px;
+	height: 48px;
+}
+.el-menu-item a{
+	text-decoration: none;
+	color: #ffffffa6;
+}
+.el-menu-item a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+.el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+	background: none;
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+	border-color: #fff;
+}
