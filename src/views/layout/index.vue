@@ -4,6 +4,8 @@
       <el-menu :default-active="activeIndex" class="el-menu" mode="horizontal" @select="handleSelect" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
         <el-menu-item index="0">预算价格</el-menu-item>
         <el-menu-item index="1">资金走势</el-menu-item>
+		<el-menu-item index="2">分红送股</el-menu-item>
+		<el-menu-item index="3">成交量</el-menu-item>
       </el-menu>
     </el-col>
     <el-col :span="24" class="container">
@@ -31,6 +33,12 @@ export default {
           break
         case '1':
           this.$router.push({ path: '/moneyflow' })
+          break
+		case '2':
+          this.$router.push({ path: '/dividend' })
+          break
+		case '3':
+          this.$router.push({ path: '/volume' })
           break
         default:
           console.log(key)
