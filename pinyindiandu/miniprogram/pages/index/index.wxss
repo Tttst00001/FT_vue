@@ -1,0 +1,30 @@
+Page{
+  background-color: #ffbf1b;
+  height: 100%;
+}
+
+.topText{
+  font-weight: bold;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  padding: 30rpx 0 20rpx;  
+}
+
+.container{
+  height: 100%;
+  background-color: #fff;
+  margin-top: 40rpx;
+  padding-top: 40rpx;
+  border-radius: 20px 20px 0 0;
+}
+
+.banner{
+  width: 100%;
+  text-align: center;
+}
+.banner image{
+  width: 680rpx;
+  height: 240rpx;
+  margin: 0 auto 10px;
+}

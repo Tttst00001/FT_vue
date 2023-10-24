@@ -1,0 +1,20 @@
+<view style="height: {{systemInfo.statusBarHeight}}px"></view>
+
+<view class="topText">拼音点读</view>
+
+<view class="body">
+  <view class="container">
+    <view wx:for="{{list}}" wx:key="index" class="item" bind:tap="pr" data-index="{{index}}">
+      <view>{{item.text}}</view>
+      <view class="{{item.index ? 'index' : ''}}">{{item.index ? item.index : ''}}</view>
+      <view class="icon">
+        <image src="https://tjcx-prod.oss-cn-beijing.aliyuncs.com/images/2023/10/23/cda1ef08-6adb-41e0-ac5e-ce6a00dcf696.png" mode="widthFix" />
+      </view>
+    </view>
+
+    <view class="txt">
+      * 听写模式: 家长在小程序中点击元素右上角会出现序号.
+    </view>
+  </view>
+</view>
+<view class="bottomBtn" bind:tap="refresh">重置</view>

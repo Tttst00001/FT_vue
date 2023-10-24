@@ -1,0 +1,8 @@
+<view style="height: {{systemInfo.statusBarHeight}}px"></view>
+
+<view class="topText">拼音点读</view>
+<view class="container">
+  <view class="banner" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bind:tap="onClick">
+    <image src="{{item.image}}" mode="aspectFill" />
+  </view>
+</view>
