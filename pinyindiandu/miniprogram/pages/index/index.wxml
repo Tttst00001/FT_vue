@@ -6,3 +6,5 @@
     <image src="{{item.image}}" mode="aspectFill" />
   </view>
 </view>
+
+<!-- <view class="bottomBtn">提交意见</view> -->

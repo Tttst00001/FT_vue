@@ -16,7 +16,7 @@ Page({
         text: '整体认读',
         description: '16个',
         image: 'https://tjcx-prod.oss-cn-beijing.aliyuncs.com/images/2023/10/24/e14f214a-9dff-4b31-bdaa-c64b656e83e6.png',
-        path: ''
+        path: '/pages/main/index?type=2'
       },
       // {
       //   text: '声调表',

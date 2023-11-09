@@ -102,5 +102,8 @@ Page({
       list: origin,
       num: 1
     })
+  },
+  backIndex() {
+    wx.navigateBack()
   }
 })

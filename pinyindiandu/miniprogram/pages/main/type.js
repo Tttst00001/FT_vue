@@ -237,13 +237,98 @@ const ym = [{
   }
 ]
 
+const ztrd = [{
+    text: 'zhi',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'chi',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'shi',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'ri',
+    index: null,
+    flag: false
+  }, {
+    text: 'zi',
+    index: null,
+    flag: false
+  }, {
+    text: 'ci',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'si',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yi',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'wu',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yu',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'ye',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yue',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yuan',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yin',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'yun',
+    index: null,
+    flag: false
+  },
+  {
+    text: 'ying',
+    index: null,
+    flag: false
+  }
+]
+
 export const fn = (value) => {
   let item;
-  if (value === '0') {
-    item = sm
-  } else {
-    item = ym
+  switch (value) {
+    case '0':
+      item = sm
+      break;
+    case '1':
+      item = ym
+      break;
+    default:
+      item = ztrd
+      break;
   }
-
   return item
 }
